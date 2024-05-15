@@ -339,7 +339,84 @@ else if (labNumber === 4) {
     menu.appendChild(button406);
 }
 
+else if (labNumber === 5) {
+    
+    let button501 = document.createElement("button");
+    button501.textContent = "Постановка задачі ЛР № 5";
+    button501.onclick = function() {
+        displaySubMenuContent("Постановка задачі ЛР № 5");
+    };
+    menu.appendChild(button501);
+
+    let button502 = document.createElement("button");
+    button502.textContent = "Способи функціонального застосування JS";
+    button502.onclick = function() {
+        displaySubMenuContent("Способи функціонального застосування JS");
+    };
+    menu.appendChild(button502);
+
+    let button503 = document.createElement("button");
+    button503.textContent = "Схема URL";
+    button503.onclick = function() {
+        displaySubMenuContent("Схема URL");
+    };
+    menu.appendChild(button503);
+
+    let button504 = document.createElement("button");
+    button504.textContent = "Обробник подій";
+    button504.onclick = function() {
+        displaySubMenuContent("Обробник подій");
+    };
+    menu.appendChild(button504);
+
+    let button505 = document.createElement("button");
+    button505.textContent = "Підстановка (entity)";
+    button505.onclick = function() {
+        displaySubMenuContent("Підстановка (entity)");
+    };
+    menu.appendChild(button505);
+
+    let button506 = document.createElement("button");
+    button506.textContent = "Вставка (тег SCRIPT)";
+    button506.onclick = function() {
+        displaySubMenuContent("Вставка (тег SCRIPT)");
+    };
+    menu.appendChild(button506);
+
+    let button507 = document.createElement("button");
+    button507.textContent = "Виконання завдання за масивами (вар.6 таб.1)";
+    button507.onclick = function() {
+        displaySubMenuContent("Виконання завдання за масивами (вар.6 таб.1)");
+    };
+    menu.appendChild(button507);
+
+    let button508 = document.createElement("button");
+    button508.textContent = "Виконання завдання за вар.6 таб.2";
+    button508.onclick = function() {
+        displaySubMenuContent("Виконання завдання за вар.6 таб.2");
+    };
+    menu.appendChild(button508);
+
+    let button509 = document.createElement("button");
+    button509.textContent = "Виконання завдання за пунктом 7";
+    button509.onclick = function() {
+        displaySubMenuContent("Виконання завдання за пунктом 7");
+    };
+    menu.appendChild(button509);
+   
+    let button510 = document.createElement("button");
+    button510.textContent = "ВИСНОВКИ за ЛР №5";
+    button510.onclick = function() {
+        displaySubMenuContent("ВИСНОВКИ за ЛР №5");
+    };
+    menu.appendChild(button510);
 }
+
+}
+
+
+
+
 // Викликаємо функцію після завантаження сторінки
 window.onload = function() {
     // Викликаємо функцію displayContent з номером 1 при завантаженні сторінки
@@ -1008,7 +1085,268 @@ function displaySubMenuContent(buttonText) {
                 break;
                         
                  
+            case "Постановка задачі ЛР № 5":
+            contentHTML = `
+                <h3>Постановка задачі лабораторної роботи № 5 (Тема, мета ЛР №5).</h3>
+                <p>ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
+                ВИКОРИСТАННЯ МАСИВІВ У JS-СЦЕНАРІЯХ. РЕАЛІЗАЦІЯ ПРОГРАМ ЗАСОВАМИ МОВИ JAVASCRIPT</p>
+        
+                <p>Мета: Придбати практичні навички роботи з масивами у js-сценаріях. 
+                Реалізація програм засобами мови JAVASCRIPT</p>
+        
+                <h3>Місце розташування ЛР №5</h3>
+                <p>Розміщено на GitHub</p>
+                <p><a href="https://github.com/mavi-fiot/LR5zvitLR" target="_blank">Звіт.</a> <a href="https://mavi-fiot.github.io/LR5zvitLR/" target="_blank">Сайт звіту.</a></p>
+                <p><a href="https://github.com/mavi-fiot/LR5WebStore" target="_blank">Проект.</a> <a href="https://mavi-fiot.github.io/LR5WebStore/" target="_blank">Сайт проекту.</a></p>
+                <p><a href="https://github.com/mavi-fiot/JSLR5" target="_blank">Виконання завдань.</a> <a href="https://mavi-fiot.github.io/JSLR5/" target="_blank">Сайт виконання завдання за пунктом 6.</a></p>
+                               
+                `;
+                break;
+                   
+            case "Способи функціонального застосування JS":
+            contentHTML = `
+                <h3>Способи функціонального застосування JavaScript:</h3>
+                
+                <br><br>
 
+                <p>Схема URL</p>
+                <a href="javascript:alert('Демонстрація схеми URL')">Натиснить</a>
+                <p>Схема URL (URL Scheme): JavaScript можна викликати з URL через 
+                    псевдо-протоколи, такі як javascript:. Це дозволяє виконувати 
+                    JavaScript код безпосередньо з адресного рядка браузера або з посилань.</p>
+                <br>
+                <p>Обробник подій</p>
+                <button onclick="myFunction()">Обробник подій</button>
+            <script>
+                function myFunction() {
+                    alert("Демонстрація обробника подій");
+                }
+            </script>
+                <br>
+                <p>Обробник подій (Event Handler): Цей метод використовується для виконання 
+                    JavaScript коду відповідно до подій, що виникають на сторінці. Наприклад, 
+                    ми можемо викликати функцію JavaScript при кліку на елемент або при 
+                    введенні тексту в поле вводу.</p>
+                <br> <br>
+
+                <p>Підстановка (entity)</p>
+
+                <p id="demo">Цей текст буде замінений за допомогою JavaScript.</p>
+
+            <script>
+                document.getElementById("demo").innerHTML = "Цей текст ВЖЕ замінений за допомогою JavaScript.";
+            </script>
+                <p>Підстановка (entity): Цей термін може вказувати на використання JavaScript для 
+                    модифікації даних на сторінці під час її відображення. Наприклад, ми можемо
+                    використовувати JavaScript для динамічного створення або зміни елементів 
+                    HTML, що називається DOM-маніпуляцією. Це може включати додавання, видалення 
+                    або зміну вмісту елементів на сторінці відповідно до подій користувача або інших факторів.</p>
+                <br>
+
+                <p>Вставка (тег SCRIPT)</p>
+                <p>Вставка (тег SCRIPT): Використання тегу <code>&lt;script&gt;</code> дозволяє 
+                    вбудовувати JavaScript-код безпосередньо в HTML-документ. Ми можемо вставляти 
+                    код прямо в розмітку сторінки або посилатися на зовнішні файли з JavaScript-кодом.</p>
+                <br>
+            <script>
+                alert("Демонстрація вставки - відображається під час завантаження сторінки.");
+            </script>
+                                
+                `;
+                break;
+                
+                                
+            case "Схема URL":
+            contentHTML = `
+                <h3>Схема URL</h3>
+                        
+                <a href="javascript:alert('Демонстрація схеми URL')">Натиснить</a>
+                <p>Схема URL (URL Scheme): JavaScript можна викликати з URL через 
+                     псевдо-протоколи, такі як javascript:. Це дозволяє виконувати 
+                    JavaScript код безпосередньо з адресного рядка браузера або з посилань.</p>
+                <br>
+                <p>Текст коду:</p> 
+                <img src="lr5js_51.jpg" alt="lr5js_51">   
+                <br> 
+                <p>Фіксація виконання:</p> 
+                <img src="lr5js_511.jpg" alt="lr5js_511">                          
+                `;
+                break;
+                                
+                                
+            case "Обробник подій":
+            contentHTML = `
+                <h3>Обробник подій</h3>
+                        
+                <button onclick="myFunction()">Обробник подій</button>
+            <script>
+                function myFunction() {
+                    alert("Демонстрація обробника подій");
+                }
+            </script>
+                <br>
+                <p>Обробник подій (Event Handler): Цей метод використовується для виконання 
+                    JavaScript коду відповідно до подій, що виникають на сторінці. Наприклад, 
+                    ми можемо викликати функцію JavaScript при кліку на елемент або при 
+                    введенні тексту в поле вводу.</p>
+                <br> <br>
+                <p>Текст коду:</p> 
+                <img src="lr5js_52.jpg" alt="lr5js_52"> 
+                <br> 
+                <p>Фіксація виконання:</p> 
+                <img src="lr5js_521.jpg" alt="lr5js_521">  
+
+                `;
+                break;
+                        
+                                        
+            case "Підстановка (entity)":
+            contentHTML = `
+                <h3>Підстановка (entity)</h3>
+                                
+                <p id="demo">Цей текст буде замінений за допомогою JavaScript.</p>
+
+            <script>
+                document.getElementById("demo").innerHTML = "Цей текст ВЖЕ замінений за допомогою JavaScript.";
+            </script>
+                <p>Підстановка (entity): Цей термін може вказувати на використання JavaScript для 
+                    модифікації даних на сторінці під час її відображення. Наприклад, ми можемо
+                    використовувати JavaScript для динамічного створення або зміни елементів 
+                    HTML, що називається DOM-маніпуляцією. Це може включати додавання, видалення 
+                    або зміну вмісту елементів на сторінці відповідно до подій користувача або інших факторів.</p>
+                <br> 
+                
+                <p>Текст коду:</p> 
+                <img src="lr5js_53.jpg" alt="lr5js_53">
+                <br> 
+                <p>Фіксація виконання:</p> 
+                <img src="lr5js_531.jpg" alt="lr5js_531">     
+
+                `;
+                break;
+
+            case "Вставка (тег SCRIPT)":
+            contentHTML = `
+                <h3>Вставка (тег SCRIPT)</h3>
+                <p>Вставка (тег SCRIPT): Використання тегу <code>&lt;script&gt;</code> дозволяє 
+                    вбудовувати JavaScript-код безпосередньо в HTML-документ. Ми можемо вставляти 
+                    код прямо в розмітку сторінки або посилатися на зовнішні файли з JavaScript-кодом.</p>
+                <br>
+            <script>
+                alert("Демонстрація вставки - відображається під час завантаження сторінки.");
+            </script>
+                <br>     
+                <p>Текст коду:</p> 
+                <img src="lr5js_54.jpg" alt="lr5js_54">   
+                <br> 
+                <p>Фіксація виконання:</p> 
+                <img src="lr5js_541.jpg" alt="lr5js_541">                                     
+                `;
+                break;
+
+            case "Виконання завдання за масивами (вар.6 таб.1)":
+            contentHTML = `
+                <h3>Виконання завдання за масивами (варіант 6 таблиці 1):</h3>
+                <br>                                   
+                <p>Текст завдання:</p>
+                <p>1.Створити одновимірний масив, кількість елементів якого задана користувачем. 
+                Обчислити суму елементів між максимальним та мінімальними значеннями масиву.</p>
+                <p>2.Упорядкувати масив у порядку зростання.(метод Швидкого сортування).
+                Надрукувати вхідний та вихідний масив.</p>
+                <p>Застосувати функції.</p>
+
+                <br>                                   
+                <p>Приклади роботи програми:</p>
+                <br> 
+                <img src="lr5js_201.jpg" alt="lr5js_201">                                      
+
+                <br> 
+                <br>     
+                <p>Текст коду:</p> 
+                <img src="lr5js_211.jpg" alt="lr5js_211"> 
+                <img src="lr5js_212.jpg" alt="lr5js_212">                                      
+                <img src="lr5js_213.jpg" alt="lr5js_213">                                  
+                                               
+                `;
+                break;
+            case "Виконання завдання за вар.6 таб.2":
+            contentHTML = `
+                <h3>Виконання завдання за варіантом 6 таблиці 2</h3>
+                <br>                                   
+                <br>                                   
+                <p>Приклади роботи програми:</p>
+                <br> 
+                <img src="lr5js_601.jpg" alt="lr5js_601">                                      
+                <img src="lr5js_602.jpg" alt="lr5js_602">                                      
+                <img src="lr5js_603.jpg" alt="lr5js_603">                                      
+
+                <br> 
+                <br>     
+                <p>Текст коду:</p> 
+                <img src="lr5js_611.jpg" alt="lr5js_611"> 
+                <img src="lr5js_621.jpg" alt="lr5js_621">                                      
+                <img src="lr5js_622.jpg" alt="lr5js_622">          
+                <img src="lr5js_631.jpg" alt="lr5js_631">          
+                <img src="lr5js_632.jpg" alt="lr5js_632">          
+                         
+                `;
+                break;
+        
+            case "Виконання завдання за пунктом 7":
+            contentHTML = `
+                <h3>Виконання завдання за пунктом 7</h3>
+                                                
+                <p>Текст файлу із скриптом:</p> 
+                <img src="lr5js_711.jpg" alt="lr5js_711"> 
+
+                <br>
+                <p>Результати виконання адаптивної верстки (без скрипта та з виконанням скрипта):</p>
+
+                <br>
+                <p>1) Десктопна версія (ширина від 1001 рх)</p>
+                <img src="lr4_11.jpg" alt="lr4_11">
+                <p>1) Без скрипта</p>   
+                <br>
+                <img src="lr5js_701.jpg" alt="lr5js_701"> 
+                <p>1) Із скриптом</p>   
+                <br>
+
+                <p>2) Планшетна версія (ширина від 501 до 1000 рх)</p>
+                <img src="lr4_12.jpg" alt="lr4_12">
+                <p>2) Без скрипта</p>   
+                <br>
+                <img src="lr5js_702.jpg" alt="lr5js_702"> 
+                <p>2) Із скриптом</p>   
+                <br>
+
+                <p>3) Версія під мобільний телефон (ширина до 500 рх)</p>
+                <img src="lr4_14.jpg" alt="lr4_14">   
+                <p>3) Без скрипта</p>   
+                <br>
+                <img src="lr5js_703.jpg" alt="lr5js_703"> 
+                <img src="lr5js_704.jpg" alt="lr5js_704"> 
+                <p>3) Із скриптом</p>   
+                <br>
+
+                `;
+                break;
+        
+       
+                            
+            case "ВИСНОВКИ за ЛР №5":
+            contentHTML = `
+                <h3>ВИСНОВКИ до ЛР №5</h3>
+                                
+                <p>В ході виконання лабораторної роботи набуто практичних навичок роботи з 
+                масивами у js-сценаріях.  Виконано завдання з реалізаціъ програм засовами мови JAVASCRIPT.
+                Відпрацьовано отримані навички на власному проекті.</p>
+                                                
+                `;
+                break;
+                                
+                         
+        
+                
         default:
             contentHTML = "<p>Тут має відображатися зміст вибраного пункту меню.</p>";
             break;
